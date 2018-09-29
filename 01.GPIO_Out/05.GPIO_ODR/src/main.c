@@ -11,9 +11,9 @@ int main(void)
 	GPIO_Init(GPIOA,&GPIO_InitStructure);
 	 while(1)
 	 {
-		 GPIOA->ODR ^= GPIO_Pin_5; // Set PORTA Pin 5 to High
+		 GPIOA->ODR |= GPIO_ODR_ODR_5; // Set PORTA Pin 5 to High
 	     for(int i=0;i<10000000;i++);
-	     GPIOA->ODR ^= GPIO_Pin_5;// Set PORTA Pin 5 to Low
+	     GPIOA->ODR &= ~GPIO_ODR_ODR_5;   // Set PORTA Pin 5 to Low
 	     for(int i=0;i<10000000;i++);
 	 }
 	  return 0;
