@@ -1,1 +1,1 @@
-# STM32F4_ARM_Microcontroller_Exercises
+# STM32-ARM-CM4Microcontroller-Exercises
