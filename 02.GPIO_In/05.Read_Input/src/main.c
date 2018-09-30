@@ -12,8 +12,8 @@ int main(void)
 
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);  //Enable Peripheral clock for GPIOC
 	GPIO_InitTypeDef GPIO_InitStructure1;   // Structure definition
-	GPIO_InitStructure1.GPIO_Pin = GPIO_Pin_13;   // Enable GPIO Pin 3 (of GPIOA)
-	GPIO_InitStructure1.GPIO_Mode = GPIO_Mode_IN;  // Pinmode to OuTPUT
+	GPIO_InitStructure1.GPIO_Pin = GPIO_Pin_13;   // Enable GPIO Pin 13 (of GPIOC)
+	GPIO_InitStructure1.GPIO_Mode = GPIO_Mode_IN;  // Pinmode to INTPUT
 	GPIO_InitStructure1.GPIO_OType = GPIO_OType_PP; //// Push pull
 	GPIO_InitStructure1.GPIO_PuPd = GPIO_PuPd_DOWN;  // // Pull Down model
 	GPIO_InitStructure1.GPIO_Speed = GPIO_Speed_50MHz;  // Speed to Fast speed
