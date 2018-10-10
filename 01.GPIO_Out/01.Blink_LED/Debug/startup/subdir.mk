@@ -15,7 +15,7 @@ startup/%.o: ../startup/%.s
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Assembler'
 	@echo $(PWD)
-	arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/StdPeriph_Driver/inc" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/inc" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/CMSIS/device" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/CMSIS/core" -g -o "$@" "$<"
+	arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/StdPeriph_Driver/inc" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/inc" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/CMSIS/device" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/CMSIS/core" -g -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

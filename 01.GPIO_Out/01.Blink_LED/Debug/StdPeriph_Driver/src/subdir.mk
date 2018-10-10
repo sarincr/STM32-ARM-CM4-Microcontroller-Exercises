@@ -144,7 +144,7 @@ StdPeriph_Driver/src/%.o: ../StdPeriph_Driver/src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/StdPeriph_Driver/inc" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/inc" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/CMSIS/device" -I"/home/angicia/workspace/STM32F4_Neucleo/01.GPIO_In/01.Blink_LED/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -DSTM32F446xx -DUSE_STDPERIPH_DRIVER -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/StdPeriph_Driver/inc" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/inc" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/CMSIS/device" -I"/home/angicia/Work Lab/Workbench/STM32F4_Neucleo/01.GPIO_Out/01.Blink_LED/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
